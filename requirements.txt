@@ -1,0 +1,10 @@
+numpy
+scikit-learn
+networkx
+fastapi
+uvicorn
+pydantic
+httpx
+pytest
+black
+ruff

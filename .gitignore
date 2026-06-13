@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+*.venv/
+venv/
+env/
+.tox/
+
+# Environment / local secrets
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary runtime output
+logs/
+*.log
+tmp/
+temp/
+
+# Local corpus-collection helpers, intermediate shards, and synthetic data are
+# not part of the public application release.
+tools/
+scripts/
+data/mock/
+data/raw/contributions/
+
+# Local data files while preserving scaffold folders
+data/raw/*
+!data/raw/fiber_wearable_patents_sources.csv
+!data/raw/patent_collection_review_needed.csv
+data/processed/*
+!data/processed/.gitkeep
+data/processed/*.db
+data/processed/*.sqlite
+data/processed/*.sqlite3
+data/exports/*
+!data/exports/.gitkeep
+data/cache/
+# Large raw USPTO bulk intermediate input (kept local; outputs are committed)
+data/JSONS_USPTO/
+
+# Claude Code local workspace
+.claude/
+
+# Node / Vite frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
